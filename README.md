@@ -3,7 +3,7 @@
 
 ## Video inputs
 
-To test our algorithm, we extracted a series of videos from Youtube, using a video converter (here)[https://www.onlinevideoconverter.com/video-converter]
+To test our algorithm, we extracted a series of videos from Youtube, using a [video converter](https://www.onlinevideoconverter.com/video-converter)
 
 | Video Name | Description | Duration | Source |
 | -- | -- | -- | -- |
