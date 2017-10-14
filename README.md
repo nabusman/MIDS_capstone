@@ -5,6 +5,8 @@
 
 To test our algorithm, we extracted a series of videos from Youtube, using a [video converter](https://www.onlinevideoconverter.com/video-converter)
 
+Due to size limitations, they are stored on [Amazon S3](https://s3.console.aws.amazon.com/s3/buckets/self.gderoo/videos_input/)
+
 | Video Name | Description | Duration | Source |
 | -- | -- | -- | -- |
 | aisle_1.mp4 | Single aisle | 00:02:20 | https://www.youtube.com/watch?v=ZzW7Bcv5pq0 |
