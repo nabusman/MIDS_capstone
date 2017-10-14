@@ -1,5 +1,5 @@
 # Input videos
-/videos_input/*
+videos_input/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
