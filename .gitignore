@@ -105,3 +105,6 @@ ENV/
 
 # videos
 MVP/videos/*
+
+# Ignore model files
+*.h5
