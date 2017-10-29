@@ -1,0 +1,1 @@
+python process_video.py -m /home/nabs/Projects/capstone/MIDS_capstone/MVP/model_data/yolo.h5 -v '/home/nabs/Projects/capstone/MIDS_capstone/MVP/videos/CCTV AKSI KOMPLOTAN PENCURI SUSU DI SUPERMARKET - SURABAYA.mp4' 
