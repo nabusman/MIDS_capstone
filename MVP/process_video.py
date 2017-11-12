@@ -30,6 +30,11 @@ def main(model_path, video_path, sample_rate, sample_unit, output_path,
 def predict_video(model_path, video_path, sample_rate, sample_unit, output_path, 
     classes_path, anchors_path, score_threshold, iou_threshold, sess):
     assert model_path.endswith('.h5'), 'Keras model must be a .h5 file.'
+
+    # Make output dir if it doesn't exist
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
+
     # Load the model
     yolo_model = load_model(model_path)
 
@@ -297,7 +302,7 @@ if __name__ == '__main__':
         type = int, help = 'The rate to sample time unit, must be an integer, \
         for instance if you want to sample 1 frame per second, put a 1 here')
     # time unit of sampling rate (s, m, h)
-    parser.add_argument('-u', '--sample_unit', required = False, default = 'm',
+    parser.add_argument('-u', '--sample_unit', required = False, default = 's',
         choices = ['s', 'm', 'h'], help = 'The time unit to sample, default is \
         "m" for minutes, options are: s (seconds), m (minutes), h (hours); \
         for instance if you want to sample 1 frame per second, put a "s" here')
